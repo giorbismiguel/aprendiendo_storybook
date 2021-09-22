@@ -1,6 +1,6 @@
 // src/GitHubUser.jsx
 import React from 'react'
-import { useFetch } from '../../../hooks/useFetch'
+import { useFetch } from '../hooks/useFetch'
 import './GitHubUser.css'
 
 export const GitHubUser = ({ username }) => {
