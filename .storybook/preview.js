@@ -1,3 +1,5 @@
+import 'antd/dist/antd.css';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +8,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
+};
+
+if (typeof global.process === "undefined") {
+  const { worker } = require("../src/mocks/browser");
+  worker.start();
 }
